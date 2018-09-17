@@ -7,23 +7,255 @@
 <title>Bootstrap Tutorial</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"  href="https://www.w3schools.com/lib/w3.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-.navbar{
-margin-bottom:0;
-border-radius:0;
+
+
+
+.bg-img {
+  background-image: url("https://www.sciencealert.com/images/articles/processed/7-reasons-look-to-space-2018_1024.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  left: 0;
+  margin: 20px;
+  max-width: 300px;
+
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.bg-img1 {
+  /* The image used */
+  background-image: url("https://www.sciencealert.com/images/articles/processed/7-reasons-look-to-space-2018_1024.jpg");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+  .btn1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  opacity: 0.9;
+}
+
+.cont{
+  position: absolute;
+  left: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.jumbotron {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 140px;
+    width: 100%;
+    background-color: powderblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+
 </style>
 </head>
 <body>
-  <div class="jumbotron" align="center" bgcolor="RED">
-    <div class="container">
-      <h1>Prakash<h1>
+
+
+  <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Causes</a></li>
+        <li><a href="index.html">Event</a></li>
+  	    <li><a href="index.html">Volunteer</a></li>
+  	    <li><a href="index.html">Gallery</a></li>
+        <li><a href="index.html">Pages</a></li>
+        <li><a href="index.html">Blogs</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+      <ul align="right">
+  					<form align="right">
+  						<input type="text" name="search" placeholder="search">
+  						<input type="submit" value="Submit">
+  						</div>
+  					</form>
+      </ul>
+  		</div>
+
     </div>
-  </div>
-<script src="https://ajax.googleapis.com/…/l…/jquery/1.12.4/jquery.min.js"></script>
+  </nav>
 
-<script src="js/bootstrap.min.js"></script>
 
-<div style="height:400px"></div>
+  <div class="bg-img">
+
+   <div class="container">
+     <button type="submit" class="btn">Donate</button>
+     <br><br>
+     <button type="submit" class="btn">Learn More</button>
+   </div>
+</div>
+<br><br>
+<div class= "jumbotron" align= "center">
+<h1>  Hello World </h1>
+</div>
+
+<div class="row">
+ <div class="column">
+   <img src="https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/master/pass/SPoW_82318_01.jpg" alt="Snow" style="width:100%">
+
+   <button type="submit" class="btn">Donate</button>
+
+  </img>
+ </div>
+ <div class="column">
+   <img src="https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/master/pass/SPoW_82318_01.jpg" alt="Forest" style="width:100%">
+   <button type="submit" class="btn">Donate</button>
+
+  </img>
+ </div>
+ <div class="column">
+   <img src="https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/master/pass/SPoW_82318_01.jpg" alt="Mountains" style="width:100%">
+   <button type="submit" class="btn">Donate</button>
+
+  </img>
+ </div>
+</div>
+
+
+<br><br><br>
+
+
+<div align=center >
+
+
+<h1>SAVE OUR CHILDREN</h1>
+<button type="submit">Donate</button>
+<button type="submit">Participate</button>
+
+</div>
+
+<div>
+<div align = center>
+<h1> Gallery<H1>
+<div>
+<div class="row">
+ <div class="column">
+
+   <img src="https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/master/pass/SPoW_82318_01.jpg" alt="Snow" style="width:100%">
+</img>
+ </div>
+ <div class="column">
+   <img src="https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/master/pass/SPoW_82318_01.jpg" alt="Forest" style="width:100%">
+  </img>
+ </div>
+ <div class="column">
+   <img src="https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/master/pass/SPoW_82318_01.jpg" alt="Mountains" style="width:100%">
+  </img>
+ </div>
+</div>
+<div class="row">
+ <div class="column">
+
+   <img src="https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/master/pass/SPoW_82318_01.jpg" alt="Snow" style="width:100%">
+</img>
+ </div>
+ <div class="column">
+   <img src="https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/master/pass/SPoW_82318_01.jpg" alt="Forest" style="width:100%">
+  </img>
+ </div>
+ <div class="column">
+   <img src="https://media.wired.com/photos/5b7f64cbbe2f8d3a624b77b2/master/pass/SPoW_82318_01.jpg" alt="Mountains" style="width:100%">
+  </img>
+ </div>
+</div>
+</div>
+
+
+<br><br>
+<div class="bg-img1">
+ <form action="/action_page.php" >
+   <h1>Contact Us</h1>
+
+
+   <input type="text" placeholder="Name" name="Name" >
+   <br>
+
+    <input type="text" placeholder="Enter Email" name="email"  width = "20px">
+<br>
+
+    <input type="text" placeholder="Enter your Message" name="Message" required>
+<br>
+   <button type="submit" class="btn1" >Login</button>
+ </form>
+</div>
+
+
+
+
 </body>
 </html>
